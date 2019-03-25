@@ -1,0 +1,6 @@
+com/example/queue/QueuePlugin.class
+com/example/queue/Reader.class
+com/example/queue/Queue.class
+com/example/queue/Queue$MyOutcomeProvider.class
+com/example/queue/Queue$Config.class
+com/example/queue/Queue$MyOutcome.class
