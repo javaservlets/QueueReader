@@ -25,6 +25,8 @@ import org.forgerock.openam.annotations.sm.Attribute;
 import org.forgerock.openam.auth.node.api.*;
 import org.forgerock.openam.core.CoreWrapper;
 import org.forgerock.util.i18n.PreferredLocales;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.security.auth.callback.TextOutputCallback;
@@ -41,8 +43,8 @@ import static org.forgerock.openam.auth.node.api.Action.send;
 
 @Node.Metadata(outcomeProvider = Queue.MyOutcomeProvider.class, configClass = Queue.Config.class)
 
-// this class reads from a queue (serverAddress + '/' + username.json
-// it always writes the result to a session obj called 'q_val'
+// this class reads from a queue (serverAddress + '/' + (username).json
+// it writes the result to a session obj called config.AttributeName to be read downstream
 
 public class Queue implements Node {
 
@@ -51,6 +53,7 @@ public class Queue implements Node {
     private final static String DEBUG_FILE = "queueNode";
     protected Debug debug = Debug.getInstance(DEBUG_FILE);
     private String guuid;
+    private final Logger logger = LoggerFactory.getLogger(Queue.class);
 
     @Override
     public Action process(TreeContext context) throws NodeProcessException {
@@ -64,10 +67,10 @@ public class Queue implements Node {
             String usr = context_json.get("username").asString();
             Reader qreader = new Reader(address, usr); // name of topic: url/use
             contents = qreader.getValue(); // cont
-            minutes = Long.valueOf(config.expirationValue()); //todo error check
+            minutes = Long.valueOf(config.expirationValue());
 
         } catch (Exception e) {
-            log("   uhh..." + e.toString());
+            log("   error" + e.toString());
             throw new NodeProcessException(e);
         }
 
@@ -82,33 +85,32 @@ public class Queue implements Node {
         } else {
             log("     q got a usr value=" + contents); //add the content.getKey(serial#) to the context so node can pick it up
             return goTo(MyOutcome.TRUE).replaceSharedState(context.sharedState
-                    .put("q_val", guuid.trim())) //todo name of key could b n config file
+                    .put("q_val", guuid.trim())) // first param used to be config.attributeName()
                     .build();
         }
 
     }
 
-    private boolean hasNotExpired(String time, Long expires) {
-        String values[] = time.split(Pattern.quote("^"));
-        guuid = values[0]; //todo error chex
-        String timestamp = values[1];
+    public boolean hasNotExpired(String time, Long expires) {
+        String values[] = time.split(Pattern.quote("^")); // strip out just the date
+        guuid = values[0]; // this init's this class's instance, and contains the value read off the q
 
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
-        sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
+        sdf.setTimeZone(TimeZone.getTimeZone("UTC")); // time zone in AWS <> time zone for firebase so lets normalize
 
-        Timestamp currenttime = new Timestamp(System.currentTimeMillis());
-        Date currentdate = new Date(currenttime.getTime());
+        Timestamp event_stamp = new Timestamp(new java.util.Date(values[1]).getTime());
+        Date event_time = new Date(sdf.format(event_stamp.getTime())); // all that to get to UTC
 
-        Date previoustime = new java.util.Date(timestamp);
-        Timestamp timestamp2 = new Timestamp(previoustime.getTime());
+        Timestamp current_stamp = new Timestamp(System.currentTimeMillis());
+        Date current_time = new Date(sdf.format(current_stamp.getTime())); // all that to get to UTC
 
-        Long elapsed = (currentdate.getTime() - timestamp2.getTime()) / 60000;
-        log((" total elapsed time: " + elapsed.toString()) + " ( " + currentdate + " - " + timestamp2.toString() + " vs ");
+        Long elapsed = (current_time.getTime() - event_time.getTime()) / 60000;
+        log((" total elapsed time: " + elapsed.toString()) + " ( " + event_time.toString() + " vs " + current_time.toString());
 
         if (elapsed <= expires)
             return true;
-        //shortcircut
+        //short circut
         return false;
     }
 
@@ -149,27 +151,19 @@ public class Queue implements Node {
     public interface Config {
         @Attribute(order = 100)
         default String serverAddress() {
-             return "Server Address";
-            //return "http://robbie.freng.org:8080";
+             return "https://forgerockip.firebaseio.com/";
         }
 
         @Attribute(order = 200)
-        default String credentials() {
-            return "Credentials";
-            //sunIdentityMSISDNNumber
+        default String expirationValue() {
+             return "5";
         }
 
         @Attribute(order = 300)
-        default String queueName() {
-            return "Queue Name";
-            //sunIdentityMSISDNNumber
+        default String attributeName() {
+            return "q_val";
         }
 
-        @Attribute(order = 400)
-        default String expirationValue() {
-             return "Minutes till expiry";
-            //return "2";
-        }
     }
 
     @Inject
@@ -179,9 +173,7 @@ public class Queue implements Node {
     }
 
     public void log(String str) {
-        //debug.message("\r\n           msg:" + str + "\r\n"); //todo log to msg, not error
-        debug.error("\r\n           msg:" + str + "\r\n");
-        //System.out.println("\n" + str);
+        logger.debug("msg:" + str + "\r\n");
     }
 
 }
