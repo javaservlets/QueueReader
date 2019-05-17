@@ -19,7 +19,8 @@ package com.example.queue;
 
 import com.google.inject.assistedinject.Assisted;
 import com.sun.identity.shared.debug.Debug;
-import org.forgerock.guava.common.collect.ImmutableList;
+// if using 6.0 then ... import org.forgerock.guava.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList;
 import org.forgerock.json.JsonValue;
 import org.forgerock.openam.annotations.sm.Attribute;
 import org.forgerock.openam.auth.node.api.*;
@@ -64,8 +65,9 @@ public class Queue implements Node {
         String address = config.serverAddress();
 
         try {
-            String usr = context_json.get("username").asString();
-            Reader qreader = new Reader(address, usr); // name of topic: url/use
+            //1.0 String usr = context_json.get("username").asString();
+            String usr = config.attributeName(); // queue should have an entry of 'headless'
+            Reader qreader = new Reader(address, usr); // q server address + name of topic (name of user)
             contents = qreader.getValue(); // cont
             minutes = Long.valueOf(config.expirationValue());
 
@@ -88,7 +90,6 @@ public class Queue implements Node {
                     .put("q_val", guuid.trim())) // first param used to be config.attributeName()
                     .build();
         }
-
     }
 
     public boolean hasNotExpired(String time, Long expires) {
@@ -147,7 +148,6 @@ public class Queue implements Node {
         EMPTY
     }
 
-
     public interface Config {
         @Attribute(order = 100)
         default String serverAddress() {
@@ -161,9 +161,8 @@ public class Queue implements Node {
 
         @Attribute(order = 300)
         default String attributeName() {
-            return "q_val";
+            return "sunIdentityMSISDNNumber";
         }
-
     }
 
     @Inject

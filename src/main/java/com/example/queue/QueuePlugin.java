@@ -57,8 +57,8 @@ import org.forgerock.openam.plugins.PluginException;
  */
 public class QueuePlugin extends AbstractNodeAmPlugin {
 
-	static private String currentVersion = "1.0.0";
-	
+	static private String currentVersion = "2.0.0";
+
     /** 
      * Specify the Map of list of node classes that the plugin is providing. These will then be installed and
      *  registered at the appropriate times in plugin lifecycle.

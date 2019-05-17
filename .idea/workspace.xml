@@ -3,16 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="097d6f4f-e8ef-448e-ba34-abd3800f7e62" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/QueueNode-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/QueueNode-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcomeProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcomeProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QueueNode-1.0.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,9 +21,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="87" column="97" lean-forward="true" selection-start-line="87" selection-start-column="97" selection-end-line="87" selection-end-column="97" />
+            <state relative-caret-position="233">
+              <caret line="90" column="29" lean-forward="true" selection-start-line="88" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
               <folding>
+                <element signature="class#MyOutcomeProvider#0;class#Queue#0" expanded="true" />
+                <element signature="e#5301#5302#0" expanded="true" />
+                <element signature="e#5351#5352#0" expanded="true" />
                 <element signature="class#Config#0;class#Queue#0" expanded="true" />
               </folding>
             </state>
@@ -39,17 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="842">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+            <state relative-caret-position="162">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -77,6 +65,11 @@
       <find>sdf</find>
       <find>currenttime</find>
       <find>guui</find>
+      <find>guav</find>
+      <find>ImmutableList</find>
+      <find>sun</find>
+      <find>getus</find>
+      <find>config.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,10 +85,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/Queue/FirebaseDB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/Queue/Queue.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Firebase.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Timer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" />
       </list>
     </option>
@@ -208,6 +202,23 @@
             </path>
             <path>
               <item name="QueueNode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QueueNode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QueueNode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QueueNode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QueueNode" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -277,7 +288,7 @@
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" />
-      <option name="HOST" value="robbie.freng.org" />
+      <option name="HOST" value="iot.freng.org" />
       <option name="PORT" value="8000" />
       <option name="AUTO_RESTART" value="false" />
       <RunnerSettings RunnerId="Debug">
@@ -331,24 +342,36 @@
       <workItem from="1555121238643" duration="955000" />
       <workItem from="1555167411724" duration="396000" />
       <workItem from="1555339319840" duration="8284000" />
+      <workItem from="1555372175266" duration="57000" />
+      <workItem from="1555605342504" duration="519000" />
+      <workItem from="1555638484535" duration="1070000" />
+      <workItem from="1555874618408" duration="273000" />
+      <workItem from="1555948859158" duration="492000" />
+      <workItem from="1555950423639" duration="9000" />
+      <workItem from="1555964679603" duration="1739000" />
+      <workItem from="1555968826097" duration="51000" />
+      <workItem from="1555977023953" duration="382000" />
+      <workItem from="1555980359261" duration="168000" />
+      <workItem from="1558122759918" duration="497000" />
+      <workItem from="1558124073991" duration="5259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45618000" />
+    <option name="totallyTimeSpent" value="56134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67346936" visible="true" weight="0.13893376" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67346936" visible="true" weight="0.1631664" />
       <window_info id="Structure" order="1" sideWeight="0.3265306" side_tool="true" weight="0.23828755" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26373628" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.24175824" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04709576" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31397173" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -357,7 +380,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.26530612" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -366,6 +389,32 @@
       <window_info anchor="right" id="Bean Validation" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67346936" visible="true" weight="0.2180937" />
+      <window_info id="Structure" order="1" sideWeight="0.3265306" side_tool="true" weight="0.23828755" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04709576" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.46624804" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.16169545" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -386,21 +435,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>101</line>
+          <line>102</line>
           <properties />
           <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java</url>
@@ -408,35 +445,32 @@
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/forgerock/am/openam-core/6.0.0/openam-core-6.0.0.jar!/org/forgerock/openam/sm/annotations/InstanceBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -478,25 +512,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="3986">
+          <caret line="616" selection-start-line="616" selection-end-line="616" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="249">
+          <caret line="36" column="117" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="docComment;method#getNodesByVersion#0;class#QueuePlugin#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="87" column="97" lean-forward="true" selection-start-line="87" selection-start-column="97" selection-end-line="87" selection-end-column="97" />
+        <state relative-caret-position="233">
+          <caret line="90" column="29" lean-forward="true" selection-start-line="88" selection-start-column="12" selection-end-line="90" selection-end-column="29" />
           <folding>
+            <element signature="class#MyOutcomeProvider#0;class#Queue#0" expanded="true" />
+            <element signature="e#5301#5302#0" expanded="true" />
+            <element signature="e#5351#5352#0" expanded="true" />
             <element signature="class#Config#0;class#Queue#0" expanded="true" />
           </folding>
         </state>
