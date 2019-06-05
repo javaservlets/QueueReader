@@ -18,7 +18,7 @@ public class Reader {
 
     public String getValue() {
         URL url = null;
-        StringBuilder resp = null;
+        StringBuilder resp = new StringBuilder("");
 
         try {
             url = new URL(this.server + "/" + this.key);
@@ -38,7 +38,6 @@ public class Reader {
 
         try {        //Check response is 200
             if (conn.getResponseCode() == 200) {
-                resp = new StringBuilder(); // exit if ""
                 InputStreamReader in = new InputStreamReader(conn.getInputStream());
                 BufferedReader br = new BufferedReader(in);
                 String text;
@@ -51,7 +50,8 @@ public class Reader {
             e.printStackTrace();
         }
 
-        if (resp == null) {
+        //if (resp == null || resp.toString().isEmpty()) {
+        if (resp.toString().equalsIgnoreCase("null")) { // || resp.toString().length() == 4) {
             return "";
         } else if (resp.toString().contains("DOCTYPE html")) { //rj? error condition when topic <> exist
             return "";
@@ -60,7 +60,6 @@ public class Reader {
         }
         return resp.toString();
     }
-
 
     public static void log(String str) {
          debug.message("+++ " + str);

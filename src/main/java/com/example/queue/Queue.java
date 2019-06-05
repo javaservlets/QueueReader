@@ -76,8 +76,8 @@ public class Queue implements Node {
             throw new NodeProcessException(e);
         }
 
-        if (contents.isEmpty()) {
-            log("     q has NO VALUE");
+        if (contents.isEmpty() || contents.equals("")) { // Q for that name could not be found in firebase
+            log("     q has NO VALUE (do you have a Q in firebase for this user?)");
             return goTo(MyOutcome.EMPTY).build();
 
         } else if ( ! hasNotExpired(contents, minutes)) {
@@ -99,13 +99,10 @@ public class Queue implements Node {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
         sdf.setTimeZone(TimeZone.getTimeZone("UTC")); // time zone in AWS <> time zone for firebase so lets normalize
-
         Timestamp event_stamp = new Timestamp(new java.util.Date(values[1]).getTime());
         Date event_time = new Date(sdf.format(event_stamp.getTime())); // all that to get to UTC
-
         Timestamp current_stamp = new Timestamp(System.currentTimeMillis());
         Date current_time = new Date(sdf.format(current_stamp.getTime())); // all that to get to UTC
-
         Long elapsed = (current_time.getTime() - event_time.getTime()) / 60000;
         log((" total elapsed time: " + elapsed.toString()) + " ( " + event_time.toString() + " vs " + current_time.toString());
 
