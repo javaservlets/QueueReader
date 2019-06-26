@@ -15,7 +15,7 @@
 -->
 # Queue Reader Authentication Node
 
-A simple authentication node for ForgeRock's [Identity Platform][forgerock_platform] 5.5 and above. This node reads a message queue looking for a user attribute to be matched as part of an Authentication Tree. Out of the box the queue is implemented in Firebase RT Database but can be changed to another implementation.
+A simple authentication node for ForgeRock's Identity Platform 6.0 and above. This node reads a message queue, looking for a user attribute and time-stamp posted so that they can be used as part of an Authentication Tree. Out of the box the queue is implemented in Firebase RT Database but could be changed to other implementations.
 
 
 Copy the .jar file from the ../target directory into the ../web-container/webapps/openam/WEB-INF/lib directory where AM is deployed.  Restart the web container to pick up the new node.  The node will then appear in the authentication trees components palette.

@@ -62,6 +62,7 @@ public class Reader {
     }
 
     public static void log(String str) {
-         debug.message("+++ " + str);
+        debug.error("reader:" + str + "\r\n");
+        System.out.println("+++   reader:" + str);
     }
 }

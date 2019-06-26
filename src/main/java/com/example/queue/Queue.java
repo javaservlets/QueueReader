@@ -34,12 +34,17 @@ import javax.security.auth.callback.TextOutputCallback;
 
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 import java.util.regex.Pattern;
 
+import static java.time.LocalDateTime.now;
 import static org.forgerock.openam.auth.node.api.Action.send;
 
 @Node.Metadata(outcomeProvider = Queue.MyOutcomeProvider.class, configClass = Queue.Config.class)
@@ -66,11 +71,11 @@ public class Queue implements Node {
 
         try {
             //1.0 String usr = context_json.get("username").asString();
-            String usr = config.attributeName(); // queue should have an entry of 'headless'
-            Reader qreader = new Reader(address, usr); // q server address + name of topic (name of user)
-            contents = qreader.getValue(); // cont
+            //1.0 fieldname below will need 2 change if we ever go back to 'pre-headless' mode
+            String fieldname = config.attributeName(); // 6.24.19 queue should have an entry of 'headless' for 'touch and go' rf id scanning
+            Reader qreader = new Reader(address, fieldname); // q server address + name of topic (name of user)
+            contents = qreader.getValue(); // values read out of json db
             minutes = Long.valueOf(config.expirationValue());
-
         } catch (Exception e) {
             log("   error" + e.toString());
             throw new NodeProcessException(e);
@@ -92,24 +97,23 @@ public class Queue implements Node {
         }
     }
 
-    public boolean hasNotExpired(String time, Long expires) {
-        String values[] = time.split(Pattern.quote("^")); // strip out just the date
-        guuid = values[0]; // this init's this class's instance, and contains the value read off the q
-
-        Calendar cal = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
-        sdf.setTimeZone(TimeZone.getTimeZone("UTC")); // time zone in AWS <> time zone for firebase so lets normalize
-        Timestamp event_stamp = new Timestamp(new java.util.Date(values[1]).getTime());
-        Date event_time = new Date(sdf.format(event_stamp.getTime())); // all that to get to UTC
-        Timestamp current_stamp = new Timestamp(System.currentTimeMillis());
-        Date current_time = new Date(sdf.format(current_stamp.getTime())); // all that to get to UTC
-        Long elapsed = (current_time.getTime() - event_time.getTime()) / 60000;
-        log((" total elapsed time: " + elapsed.toString()) + " ( " + event_time.toString() + " vs " + current_time.toString());
-
-        if (elapsed <= expires)
-            return true;
-        //short circut
-        return false;
+    public boolean hasNotExpired(String payload, Long expires) {
+        Long elapsed = null ;
+        boolean is_expired = false;
+        try {
+            String values[] = payload.split(Pattern.quote("^")); // strip out just the date
+            guuid = values[0]; // this init's this class's instance, and contains the value read off the q
+            LocalDateTime event_time = LocalDateTime.parse(values[1].trim(), DateTimeFormatter.ofPattern("MM/dd/yyyy h:mm:ss a"));
+            LocalDateTime current_time = now(ZoneId.of("GMT"));
+            elapsed = Duration.between(event_time, current_time).toMinutes();
+            log("elapsed time: " + elapsed.toString());
+            if (elapsed <= expires)
+                is_expired = true;
+        } catch (Exception e) {
+            log("queueReader.hasnotexpired ERROR: " + e) ;
+        } finally {
+            return is_expired;
+        }
     }
 
     public static class MyOutcomeProvider implements org.forgerock.openam.auth.node.api.OutcomeProvider {
@@ -158,8 +162,9 @@ public class Queue implements Node {
 
         @Attribute(order = 300)
         default String attributeName() {
-            return "sunIdentityMSISDNNumber";
-        }
+            return "headless";
+        } //sunIdentityMSISDNNumber
+
     }
 
     @Inject
@@ -169,7 +174,8 @@ public class Queue implements Node {
     }
 
     public void log(String str) {
-        logger.debug("msg:" + str + "\r\n");
+        debug.error("msg:" + str + "\r\n");
+        System.out.println("+++    q node:" + str);
     }
 
 }
