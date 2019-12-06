@@ -2,109 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="097d6f4f-e8ef-448e-ba34-abd3800f7e62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/queue/Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirebaseDB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/QueueReader.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/firebase/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/firebase/QueuePlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/firebase/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.forgerock.openam.plugins.AmPlugin" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.forgerock.openam.plugins.AmPlugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/firebase/Queue.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/QueueNode-2.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/services/org.forgerock.openam.plugins.AmPlugin" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/services/org.forgerock.openam.plugins.AmPlugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue$MyOutcomeProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Queue.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/QueuePlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/queue/Reader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
-              <folding>
-                <element signature="class#MyOutcomeProvider#0;class#Queue#0" expanded="true" />
-                <element signature="e#5424#5425#0" expanded="true" />
-                <element signature="e#5474#5475#0" expanded="true" />
-                <element signature="class#MyOutcome#0;class#Queue#0" expanded="true" />
-                <element signature="class#Config#0;class#Queue#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#2275#2276#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Firebase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="86" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>iotdn</find>
-      <find>newState</find>
-      <find>dnaatt</find>
-      <find>firebas</find>
-      <find>fire</find>
-      <find>iotdna</find>
-      <find>iot</find>
-      <find>table</find>
-      <find>attributena</find>
-      <find>tablenam</find>
-      <find>queuere</find>
-      <find>serverAddress</find>
-      <find>confif</find>
-      <find>q_val</find>
-      <find>useratt</find>
-      <find>config</find>
-      <find>sdf</find>
-      <find>currenttime</find>
-      <find>guui</find>
-      <find>guav</find>
-      <find>ImmutableList</find>
-      <find>sun</find>
-      <find>getus</find>
-      <find>config.</find>
-    </findStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/example/FirebaseDB/FirebaseDB.properties" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/Value.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/FirebaseDB/FireBaseReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/FirebaseDB/FirebaseDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Queue/FirebaseDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Queue/Queue.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/Timer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/Firebase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -113,101 +62,39 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="729" />
-  </component>
+  <component name="ProjectId" id="1URdLutocWTcWBgS8TklpXj5xRl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QueueReader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="QueueReader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA&#10;JavaScript 1.5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.rfideas" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.FirebaseDB" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -222,39 +109,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Java Scratch.Firebase">
-    <configuration name="Firebase" type="Java Scratch" factoryName="Java Scratch" temporary="true">
+  <component name="RunManager" selected="Java Scratch.randomaker">
+    <configuration name="Firebase" type="Java Scratch" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.example.queue.Firebase" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/Firebase.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Firebase" type="Java Scratch" factoryName="Java Scratch" temporary="true">
+    <configuration name="Firebase" type="Java Scratch" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.example.iotDna.Firebase" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/Firebase.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="average" type="Java Scratch" factoryName="Java Scratch">
+    <configuration name="average" type="Java Scratch">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <module name="FirebaseDB" />
+      <module name="QueueReader" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timer" type="Java Scratch" factoryName="Java Scratch">
+    <configuration name="randomaker" type="Java Scratch">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <module name="QueueReader" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="timer" type="Java Scratch">
       <option name="MAIN_CLASS_NAME" value="com.example.queue.Timer" />
-      <module name="FirebaseDB" />
+      <module name="QueueReader" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="remote" type="Remote">
-      <module name="FirebaseDB" />
+      <module name="QueueReader" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" />
@@ -270,6 +165,7 @@
     <list>
       <item itemvalue="Java Scratch.average" />
       <item itemvalue="Java Scratch.timer" />
+      <item itemvalue="Java Scratch.randomaker" />
       <item itemvalue="Java Scratch.Firebase" />
       <item itemvalue="Remote.remote" />
     </list>
@@ -334,71 +230,53 @@
       <workItem from="1559609640264" duration="296000" />
       <workItem from="1559609996561" duration="560000" />
       <workItem from="1559683914375" duration="240000" />
-      <workItem from="1559692181223" duration="3334000" />
+      <workItem from="1559692181223" duration="4391000" />
+      <workItem from="1559877342008" duration="992000" />
+      <workItem from="1561058860083" duration="10000" />
+      <workItem from="1561181897463" duration="135000" />
+      <workItem from="1561506560699" duration="1789000" />
+      <workItem from="1561509705308" duration="202000" />
+      <workItem from="1561524069029" duration="9110000" />
+      <workItem from="1562027359548" duration="15000" />
+      <workItem from="1562129443114" duration="234000" />
+      <workItem from="1562361021509" duration="3773000" />
+      <workItem from="1562432783347" duration="173000" />
+      <workItem from="1562432971807" duration="102000" />
+      <workItem from="1562527202982" duration="87000" />
+      <workItem from="1562527336345" duration="1800000" />
+      <workItem from="1562529339240" duration="320000" />
+      <workItem from="1562529674402" duration="309000" />
+      <workItem from="1562530459452" duration="273000" />
+      <workItem from="1562530823575" duration="191000" />
+      <workItem from="1562887512622" duration="97000" />
+      <workItem from="1565139907977" duration="9656000" />
+      <workItem from="1565208384963" duration="21000" />
+      <workItem from="1565209125053" duration="72000" />
+      <workItem from="1565209218822" duration="1112000" />
+      <workItem from="1565227847491" duration="14000" />
+      <workItem from="1575323291080" duration="4150000" />
+      <workItem from="1575337894103" duration="3225000" />
+      <workItem from="1575408400270" duration="197000" />
+      <workItem from="1575408610914" duration="1498000" />
+      <workItem from="1575571409303" duration="115000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65871000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67346936" visible="true" weight="0.20597738" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18995291" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3124019" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.26530612" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.3265306" weight="0.11954766" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67346936" visible="true" weight="0.20597738" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18995291" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3124019" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.26530612" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.3265306" visible="true" weight="0.11954766" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Bean Validation" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -409,178 +287,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java</url>
           <line>4</line>
-          <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java</url>
-          <line>128</line>
-          <properties />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/firebase/Queue.java</url>
+          <line>134</line>
           <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/forgerock/am/openam-core/6.0.0/openam-core-6.0.0.jar!/org/forgerock/openam/sm/annotations/InstanceBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Verify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="92" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/text/Format.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <element signature="e#5629#5630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/sql/Timestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3986">
-          <caret line="616" selection-start-line="616" selection-end-line="616" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="36" column="117" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="117" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/QueuePlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="docComment;method#getNodesByVersion#0;class#QueuePlugin#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/example/queue/Queue.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Firebase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="86" selection-start-line="13" selection-start-column="86" selection-end-line="13" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#2275#2276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/queue/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
-          <folding>
-            <element signature="class#MyOutcomeProvider#0;class#Queue#0" expanded="true" />
-            <element signature="e#5424#5425#0" expanded="true" />
-            <element signature="e#5474#5475#0" expanded="true" />
-            <element signature="class#MyOutcome#0;class#Queue#0" expanded="true" />
-            <element signature="class#Config#0;class#Queue#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
 </project>

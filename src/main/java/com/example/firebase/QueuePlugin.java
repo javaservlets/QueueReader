@@ -14,7 +14,7 @@
  * Copyright 2018 ForgeRock AS.
  */
 
-package com.example.queue;
+package com.example.firebase;
 
 import java.util.Collections;
 import java.util.Map;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FirebaseDB.iml" filepath="$PROJECT_DIR$/FirebaseDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueueReader.iml" filepath="$PROJECT_DIR$/QueueReader.iml" />
     </modules>
   </component>
 </project>

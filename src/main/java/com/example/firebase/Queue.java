@@ -15,7 +15,7 @@
  */
 
 
-package com.example.queue;
+package com.example.firebase;
 
 import com.google.inject.assistedinject.Assisted;
 import com.sun.identity.shared.debug.Debug;
@@ -30,18 +30,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
-import javax.security.auth.callback.TextOutputCallback;
 
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-import java.util.TimeZone;
 import java.util.regex.Pattern;
 
 import static java.time.LocalDateTime.now;
@@ -51,12 +45,14 @@ import static org.forgerock.openam.auth.node.api.Action.send;
 
 // this class reads from a queue (serverAddress + '/' + (username).json
 // it writes the result to a session obj called config.AttributeName to be read downstream
+//todo transient
+//todo bundle
 
 public class Queue implements Node {
 
     private final Config config;
     private final CoreWrapper coreWrapper;
-    private final static String DEBUG_FILE = "queueNode";
+    private final static String DEBUG_FILE = "QueueReader";
     protected Debug debug = Debug.getInstance(DEBUG_FILE);
     private String guuid;
     private final Logger logger = LoggerFactory.getLogger(Queue.class);
@@ -64,14 +60,12 @@ public class Queue implements Node {
     @Override
     public Action process(TreeContext context) throws NodeProcessException {
         Action.ActionBuilder action;
-        JsonValue context_json = context.sharedState.copy();
+        JsonValue context_json = context.sharedState.copy(); //todo transient
         String contents;
         Long minutes;
         String address = config.serverAddress();
 
-        try {
-            //1.0 String usr = context_json.get("username").asString();
-            //1.0 fieldname below will need 2 change if we ever go back to 'pre-headless' mode
+        try { //1.0 fieldname below will need 2 change if we ever go back to 'pre-headless' mode
             String fieldname = config.attributeName(); // 6.24.19 queue should have an entry of 'headless' for 'touch and go' rf id scanning
             Reader qreader = new Reader(address, fieldname); // q server address + name of topic (name of user)
             contents = qreader.getValue(); // values read out of json db
@@ -111,6 +105,8 @@ public class Queue implements Node {
                 is_expired = true;
         } catch (Exception e) {
             log("queueReader.hasnotexpired ERROR: " + e) ;
+            throw new NodeProcessException(e);
+
         } finally {
             return is_expired;
         }
@@ -152,7 +148,7 @@ public class Queue implements Node {
     public interface Config {
         @Attribute(order = 100)
         default String serverAddress() {
-             return "https://forgerockip.firebaseio.com/";
+             return "https://forgerock-51592.firebaseio.com/";
         }
 
         @Attribute(order = 200)
@@ -174,7 +170,7 @@ public class Queue implements Node {
     }
 
     public void log(String str) {
-        debug.error("msg:" + str + "\r\n");
+        debug.message("msg:" + str + "\r\n");
         System.out.println("+++    q node:" + str);
     }
 
